@@ -1,0 +1,201 @@
+@import url(https://db.onlinewebfonts.com/c/70f3e46b3bb904260d1b1a6e0f2edf08?family=HM+Sans+Regular);
+*{
+    font-family: "HM Sans Regular";
+}
+footer {
+    width: 95.5%;
+    height: 554.76px;
+    padding: 64px 32px;
+    background-color: #E4E4E4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footercontentclass {
+    width: 928px;
+    height: 222px;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+}
+
+.footericon {
+    width: 24px;
+    height: 24px;
+    margin: 10px;
+}
+
+.footertext2,
+.footertext-2 {
+
+    margin: 20px 0;
+}
+
+.footerheading {
+    font-size: 16px;
+    margin: 0 0 18px;
+    font-weight: 600;
+}
+
+.footertext {
+
+    text-decoration: double;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.footercontent-1 div {
+
+    margin: 0 0 8px;
+}
+
+@media (max-width: 767.98px) {
+    .footer-hidden-sm {
+        display: none !important;
+    }
+}
+
+.footer2options {
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+
+.banner2{
+
+
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust as needed */
+    background-image: url('path-to-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 20px; 
+}
+
+.buttonclass-3{
+   
+ justify-content: start;
+ display: flex;
+ overflow-x: scroll;
+ overflow-y: hidden;
+ display: flex;
+ white-space: nowrap;
+ scrollbar-width: none;
+ margin-left: 13%;
+}
+.button-3{
+    margin: 10px;
+    border-radius: 45px;
+    font-size: 16px;
+    padding: 12px 16px;
+    background-color:white;
+    border-width: 2px;
+
+}
+.buttonclass-3 :nth-child(1){
+    background-color:red;
+    color: white;
+    border: 0;
+}
+
+ 
+  @media (max-width: 600px) {
+    .button-3 {
+        margin: 6 px;
+        border-radius: 45px;
+        font-size: 10px;
+        font-weight: 600;
+        background-color:white;
+        border-width: 1px;
+    }
+    .buttonclass-3{
+        margin-left: 1%;
+    }
+    .Arrivals{
+        margin-left: 0;
+    }
+    .Arrivalsclass{
+        margin: 0 !important;
+
+    }
+  }
+  
+.buttonclass-3{
+    overflow-x: auto;
+    overflow-y: auto;
+    white-space: nowrap;
+  }
+
+  .smnav{
+    margin-right: 10px;
+  }
+  .opt{
+    margin: 30px 0 30px 0;
+  }
+
+  @media(min-width:766px){
+
+  footer {
+      width: 95.5%;
+      height: 554.76px;
+      padding: 64px 32px;
+      background-color: #E4E4E4;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .footercontentclass {
+      width: 928px;
+      height: 222px;
+      padding: 0 16px;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 0 20px 0;
+  }
+  
+  .footericon {
+      width: 24px;
+      height: 24px;
+      margin: 10px;
+  }
+  
+  .footertext2,
+  .footertext-2 {
+  
+      margin: 20px 0;
+  }
+  
+  .footerheading {
+      font-size: 16px;
+      margin: 0 0 18px;
+      font-weight: 600;
+  }
+  
+  .footertext {
+  
+      text-decoration: double;
+      color: black;
+      font-size: 14px;
+      font-weight: 500;
+  }
+  
+  .footercontent-1 div {
+  
+      margin: 0 0 8px;
+  }
+    
+
+  }
