@@ -199,3 +199,7 @@ footer {
     
 
   }
+
+  .hov:hover{
+    border-bottom: 1px solid black;
+  }
