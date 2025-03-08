@@ -1,17 +1,19 @@
-from graphene import ObjectType, String, Schema, Field
+import graphene
 
-class User(ObjectType):
-    id = String()
-    name = String()
-    email = String()
+class UserType(graphene.ObjectType):
+    id = graphene.ID(required=True)
+    username = graphene.String(required=True)
+    email = graphene.String(required=True)
 
-class Query(ObjectType):
-    user = Field(User, id=String(required=True))
+class Query(graphene.ObjectType):
+    user = graphene.Field(UserType, id=graphene.ID(required=True))
 
     def resolve_user(self, info, id):
-        # Simulating a user fetch from a database
-        users = {"1": {"id": "1", "name": "Alice", "email": "alice@example.com"},
-                 "2": {"id": "2", "name": "Bob", "email": "bob@example.com"}} 
-        return users.get(id, None)
+        # Simulate a database lookup
+        users = {
+            '1': {'id': '1', 'username': 'john_doe', 'email': 'john@example.com'},
+            '2': {'id': '2', 'username': 'jane_doe', 'email': 'jane@example.com'}
+        }
+        return users.get(id)
 
-schema = Schema(query=Query)
+schema = graphene.Schema(query=Query)
