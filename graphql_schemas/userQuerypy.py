@@ -9,6 +9,7 @@ class Query(ObjectType):
     user = Field(User, id=String(required=True))
 
     def resolve_user(self, info, id):
-        return {'id': id, 'name': 'John Doe', 'email': 'john.doe@example.com'}
+        # Simulating a user lookup
+        return User(id=id, name='John Doe', email='john@example.com')
 
 schema = Schema(query=Query)
